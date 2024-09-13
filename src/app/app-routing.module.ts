@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'praped1',
+    loadChildren: () => import('./praped1/praped1.module').then( m => m.Praped1PageModule)
+  },
+  {
+    path: 'sinka',
+    loadChildren: () => import('./sinka/sinka.module').then( m => m.SinkaPageModule)
+  },
+  {
+    path: 'sinka2',
+    loadChildren: () => import('./sinka2/sinka2.module').then( m => m.Sinka2PageModule)
+  },
+  {
+    path: 'sinka3',
+    loadChildren: () => import('./sinka3/sinka3.module').then( m => m.Sinka3PageModule)
+  },
 ];
 
 @NgModule({
