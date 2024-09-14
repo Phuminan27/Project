@@ -7,11 +7,20 @@ import { NavController } from '@ionic/angular';
 })
 export class Praped1Page implements OnInit {
 
-  constructor(private navCtrl : NavController) { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
   }
- 
-  goToSinka(){
-    this.navCtrl.navigateForward('/sinka')  }
+
+  goToSinka() {
+    this.navCtrl.navigateForward('/sinka')
+  }
+
+  goToSink2() {
+    this.navCtrl.navigateForward('/sinka2')
+  }
+
+  goToSink3() {
+    this.navCtrl.navigateForward('/sinka3')
+  }
 } 
